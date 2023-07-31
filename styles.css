@@ -19,6 +19,11 @@ body {
     color: #ececf1;
 }
 
+a {
+    text-decoration: none;
+    color: #ececf1;
+}
+
 .container {
     width: 900px;
     max-width: calc(100% - 40px);
@@ -32,6 +37,7 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+    line-height: 1.5;
 }
 
 .header h1 {
@@ -129,6 +135,70 @@ body {
 .right img {
     width: 100%;
     height: 605px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    /* CSS rules for smaller screens */
+
+    .header .list .item {
+        width: 40%;
+    }
+
+    .header h1 {
+        font-size: 3rem;
+        line-height: 1.5;
+    }
+
+    .header .item span {
+        font-size: 1.4rem;
+    }
+
+    .header .item img {
+        width: 40px;
+        height: 40px;
+    }
+    .letter {
+        flex-direction: column-reverse;
+        height: 100vh;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .left {
+        width: 100%;
+        height: 50%;
+    }
+    .border .line-1 {
+        width: 100%;
+        height: 2px;
+        background-color: #fef5f2;
+    }
+    .border .line-2 {
+        width: 100%;
+        height: 4px;
+        background-color: #fef5f2;
+        margin: 4px 0;
+    }
+    .border .line-3 {
+        width: 100%;
+        height: 2px;
+        background-color: #fef5f2;
+    }
+
+    .left .content .desc {
+        font-size: 1.4rem;
+    }
+    .right {
+        width: 100%;
+        height: 50%;
+    }
+
+    .right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 @-webkit-keyframes snowflakes-fall {
